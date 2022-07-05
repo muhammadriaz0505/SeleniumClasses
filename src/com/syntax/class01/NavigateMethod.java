@@ -14,6 +14,6 @@ public class NavigateMethod {
         Thread.sleep(5000);
         driver.navigate().refresh();
         //driver.close();  will close the current tab
-        driver.quit();// will quit the whole browsercd 
+        driver.quit();// will quit the whole browsercd
     }
 }
