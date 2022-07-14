@@ -20,7 +20,7 @@ public class HandleDDWithIterator {
         Select select=new Select(catagoriesDD);
         List<WebElement> options=select.getOptions();
         Iterator<WebElement> it=options.iterator();
-        while(it.hasNext()){  
+        while(it.hasNext()){
             WebElement ddOption=it.next();
             String optionText=ddOption.getText();
             System.out.println(optionText);

@@ -22,11 +22,11 @@ public class HandlingDropDown {
             select.selectByVisibleText("Thursday");
             Thread.sleep(1000);
             select.selectByValue("Friday");
-List<WebElement> allOptions=select.getOptions();
-int size=allOptions.size();
+            List<WebElement> allOptions=select.getOptions();
+            int size=allOptions.size();
             System.out.println(size);
             for(int i=1; i<size; i++){
-               String options= allOptions.get(i).getText();
+                String options= allOptions.get(i).getText();
                 System.out.println(options);
                 select.selectByIndex(i);
                 Thread.sleep(1000);
