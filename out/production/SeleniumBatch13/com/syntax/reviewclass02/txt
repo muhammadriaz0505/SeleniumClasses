@@ -1,0 +1,26 @@
+<html>
+	<head>
+		<title>who am i</title>
+	</head>
+	<body>
+		<div>
+			<label>heelo</label>
+		</div>
+		<div>
+			<input>enter your name</input>  ->-<-
+		</div>
+	</body>
+</html>
+/html/body/div[2]/input
+absolute xpath:
+/html/head/title   -> to get the title
+/html/body/div/input  -> to get to input tag
+advance xpath:
+get to the nearest sibling or parent or ancestor which is uniquely accessible then access your desired tag.
+Following Sibling example:
+//label[@name='myid']/following-sibling::input
+hey driver get me the tag label which has attribute "name" whose value is " myid"
+AND THEN
+get e its following -sibling which has a tagname of "input'
+Preceding sibling example:
+//label[@name='id']/preceding-sibling::input

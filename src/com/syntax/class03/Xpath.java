@@ -16,5 +16,6 @@ public class Xpath {
        password.sendKeys("test");
        WebElement loginButton=driver.findElement(By.xpath("//input[@value='Login']"));
        loginButton.click();
+
     }
 }
