@@ -20,6 +20,7 @@ public class Homework01 {
         String mainPageHandle= driver.getWindowHandle();
         WebElement newTabButton=driver.findElement(By.xpath("//button[@id='tabButton']"));
         newTabButton.click();
+        System.out.println(newTabButton.getText());
         Set<String> allWindowHandles=driver.getWindowHandles();
         Iterator<String> it=allWindowHandles.iterator();
         mainPageHandle=it.next();
@@ -34,7 +35,8 @@ public class Homework01 {
         it=allWindowHandles.iterator();
         mainPageHandle= it.next();
         String newWindowHandle=it.next();
-        String newWindowText=driver.switchTo().window(newWindowHandle).findElement(By.id("sampleHeading")).getText();
+        driver.switchTo().window(newWindowHandle);
+        String newWindowText=driver.findElement(By.id("sampleHeading")).getText();
         System.out.println(newWindowText);
         driver.close();
         driver.switchTo().window(mainPageHandle);
@@ -43,7 +45,8 @@ public class Homework01 {
         allWindowHandles=driver.getWindowHandles();
         it= allWindowHandles.iterator();
         mainPageHandle=it.next();
-        
+
+
 
 
 

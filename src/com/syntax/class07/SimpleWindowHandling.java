@@ -16,7 +16,7 @@ public class SimpleWindowHandling {
         WebDriver driver = new ChromeDriver();
         driver.get(url);
         String mainPageHandle=driver.getWindowHandle();//get window handle for main page
-        System.out.println(mainPageHandle);
+         System.out.println(mainPageHandle);
         WebElement helpLink=driver.findElement(By.linkText("Help"));
         helpLink.click();
         Set<String> allWindowHandles=driver.getWindowHandles();//store all the handle inside the set
