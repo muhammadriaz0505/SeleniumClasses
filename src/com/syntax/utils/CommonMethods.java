@@ -11,10 +11,11 @@ public class CommonMethods {
     public void closeBrowser(){
         driver.quit();
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
         CommonMethods commonMethods=new CommonMethods();
         commonMethods.openBrowser("http://www.google.com");
+        Thread.sleep(2000);
         commonMethods.closeBrowser();
     }
 
